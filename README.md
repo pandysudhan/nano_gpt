@@ -14,4 +14,4 @@ model specifications:
     n_head = 6
     n_layers = 6
 
-sample output can be found [here](./more.md)
+sample output can be found [here](./more.txt)
