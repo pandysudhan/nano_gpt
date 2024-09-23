@@ -239,9 +239,8 @@ for iter in range(max_iters):
     optimzer.step()
 
 # generation
-context = torch.zeros((2, 1), dtype=torch.long, device=device)
+context = torch.zeros((1, 1), dtype=torch.long, device=device)
 # open('more.txt', 'w').write(decode(m.generate(context, max_new_tokens=10000)[0].tolist()))
 open("more.txt", "w").write(
-    decode(m.generate(token_batch=context, max_token_generation=500)[0].tolist())
+    decode(m.generate(token_batch=context, max_token_generation=10000)[0].tolist())
 )
-print(decode(m.generate(token_batch=context, max_token_generation=500)[1].tolist()))
