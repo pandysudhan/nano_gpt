@@ -3,6 +3,7 @@ This is a char level bigram model trained on all of Shakespeare's writing.
 Number of parameters: 10.788929 M 
 
 model specifications:     
+
     block_size = 256  # max context length for model    
     batch_size = 64     
     learning_rate = 3e-4     
